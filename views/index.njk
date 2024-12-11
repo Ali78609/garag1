@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/css/auth.css" type="text/css">
+</head>
+<body class="bod">
+    <section class="admin">
+    <form method='POST' action='/login' enctype='application/x-www-from-urlencoded'>
+    <p><input type='text' name='username' class='input_login' placeholder="Логин"></p>
+    <p><input type='password' name='password' class='input_password' placeholder="Пароль"></p>
+       {%if authError %}
+    <div class='error'>
+        <p class="error_1">Неправильный Логин или Пароль</p>
+    </div>
+    {% endif%}
+    <button class='login_btn btn-block btn-primary btn btn-large'>Вход</button>
+    </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+     <link rel="stylesheet" href="/css/admin.css" type="text/css">
+</head>
+<body>
+  {% if user %}
+        <section class="main center">
+    
+     <div class="line"></div>
+     <div class="container center">
+        <div class="watch">
+          <h2 id="watch">00:00:00:00</h2>
+         </div>
+        <div class="buttons">
+          <button id="start">start</button>
+          <button id="pause">pause</button>
+          <button id="reset">reset</button>
+          <button id="loop">loop</button>
+        </div>
+        <div id="save"></div>
+      </div>
+   
+  <a href="/logout" class="user_btn">Выход</a>
+    </section>
+    {%endif%}
+</body>
+</html>

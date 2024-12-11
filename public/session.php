@@ -1,0 +1,1 @@
+    select login , password FROM admin 
